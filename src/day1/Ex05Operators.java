@@ -4,7 +4,7 @@ public class Ex05Operators {
     public static void main(String[] args) {
 
         int a = 4 + 4;
-//        byte b = a + 1;
+        byte b = (byte) (a + 1);
 //        short c = a + 2;
         // Remember that arithmetic operations result in int type, so they cannot directly be stored into a byte or short variable. They would need to be cast
 
@@ -28,10 +28,14 @@ public class Ex05Operators {
         int a3 = 40;
         a3 += 10;
 
+        System.out.println("a2 = " + a2);
+        System.out.println("a3 = " + a3);
+
         //------------------------------------------------------
 
         int n = 10; // 10  -> 11 --> 12
         System.out.println(n++); // 10
+        System.out.println(n); //11
         System.out.println(++n); // 12
 
         int n2 = 5; // 5 -> 4 -> 5 _> 6 -> 5 -> 4
@@ -61,10 +65,15 @@ public class Ex05Operators {
         System.out.println(false || true);
         System.out.println(false || false);
 
+        System.out.println(5 > 2 && 3 == 3);
+        System.out.println(5 > 20 && 3 == 3);
+        System.out.println(7 > 0 || 4 < 3);
+        System.out.println(7 > 0 | 4 < 3);
+
         System.out.println("Short circuit function:");
 
         System.out.println(true || 5/0 == 0);
-//      System.out.println(true | 5/0 == 0);
+        //System.out.println(true | 5/0 == 0);
 
     }
 }

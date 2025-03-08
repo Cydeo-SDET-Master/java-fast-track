@@ -1,6 +1,7 @@
 package day1;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Ex02Datatypes {
@@ -14,6 +15,7 @@ public class Ex02Datatypes {
         float e;
         double f;
         boolean g;
+        char ch;
 
         // non-primitive datatypes: Objects
         String h;
@@ -28,6 +30,13 @@ public class Ex02Datatypes {
         System.out.println(" * Double: " + Double.MIN_VALUE + " <-> " + Double.MAX_VALUE);
 
         System.out.println(new BigDecimal(Double.MAX_VALUE));
+
+        //long lNum = 3453463234235344235345L; -> Error - number is too large
+        BigInteger bn1 = new BigInteger("3453463234235344235345");
+        System.out.println("bn1 = " + bn1);
+
+        BigInteger bn2 = new BigInteger("523453634251246234632465674435345345");
+        System.out.println(bn1.add(bn2));
 
         // int and double are the default types
         int i1 = 4;
