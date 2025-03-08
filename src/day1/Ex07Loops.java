@@ -37,7 +37,7 @@ public class Ex07Loops {
 
         System.out.println("------------------------------------------------------");
 
-        String s2 = "abcdef";
+        String s2 = "abczdef";
         int count2 = 0;
         do {
             count2++;
