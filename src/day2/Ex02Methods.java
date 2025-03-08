@@ -32,7 +32,7 @@ public class Ex02Methods {
     public static void method6(int n){
 
         if(n < 0){
-            return;
+            return;//exit method
         }
 
         for(int i = 0; i < n; i++){

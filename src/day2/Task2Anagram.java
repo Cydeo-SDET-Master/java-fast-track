@@ -47,7 +47,7 @@ public class Task2Anagram {
     }
 
     public static void main(String[] args) {
-        String s = "listet";
+        String s = "listen";
         String s2 = "silent";
 
         System.out.println(isAnagram(s, s2));

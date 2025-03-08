@@ -9,6 +9,17 @@ public class Ex01Methods {
         } else {
             System.out.println(n + " is odd");
         }
+
+        System.out.println("44 is " + checkNum(44));
+        System.out.println("33 is " + checkNum(33));
+    }
+
+    public static String checkNum(int n) {
+        if (n % 2 == 0) {
+            return "even";
+        } else {
+            return "odd";
+        }
     }
     // Q: is this main method reusable?
 

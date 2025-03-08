@@ -11,11 +11,11 @@ public class Ex10VarArgs {
         System.out.println(last(a)); // a normal array can still be accepted too
     }
 
-    public static int first(int [] arr) {
+    public static int first(int[] arr) {
         return arr[0];
     }
 
-    public static int last(int ... arr){ // var arg used
+    public static int last(int... arr){ // var arg used
         return arr[arr.length - 1];
     }
 

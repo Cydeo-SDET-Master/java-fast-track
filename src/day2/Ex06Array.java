@@ -22,6 +22,11 @@ public class Ex06Array {
 
         int[] n1 = {1, 2, 3}; // giving the value of the elements
         int[] n2 = new int[4]; // creating a new array with a specific number of elements
+        n2[0] = 8;
+        n2[1] = 3;
+        n2[2] = 77;
+        n2[3] = 77;
+
         int[] n3 = new int[]{10, 9, 8}; // another syntax often seen without the reference. used to quickly define an array type
 
         // arrays can hold both primitive types and object types
