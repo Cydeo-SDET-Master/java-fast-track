@@ -11,7 +11,7 @@ class Discord extends App {
     }
 }
 
-class Instagram extends App implements Stories {
+class Instagram extends App implements Stories, Photos {
     @Override
     public void launch() {
         System.out.println("Connecting to Instagram servers...");
@@ -26,4 +26,13 @@ class Instagram extends App implements Stories {
     public void viewStory() {
         System.out.println("Viewing story");
     }
+
+    @Override
+    public void post() {
+        System.out.println("Posting photo to Instagram");
+    }
+}
+
+interface Photos {
+    public abstract void post();
 }

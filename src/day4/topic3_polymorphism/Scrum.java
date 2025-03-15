@@ -8,9 +8,13 @@ public class Scrum {
     public static void main(String[] args) {
 
         // Reference of super classes
-
+        //Tester -> Person,Object,Employee, CreateSmokeTest
         Person tester1 = new Tester("James", "Secret Agent", 150_000);
         System.out.println(tester1);
+
+        Object testerB = new Tester("James", "Secret Agent", 150_000);
+        CreateSmokeTest testerC = new Tester("James", "Secret Agent", 150_000);
+
 
         // tester1 can access the name variable
 
@@ -67,6 +71,7 @@ public class Scrum {
         allEmployees.add((Employee) tester3);
         allEmployees.add((Employee) tester4);
         allEmployees.add((Employee) tester5); // up casting automatic
+        allEmployees.add(new Tester("Rose", "QA", 320_000));
         System.out.println(allEmployees);
 
         System.out.println(maxSalary(allEmployees));
@@ -76,7 +81,7 @@ public class Scrum {
         // isScrumTeam(new CEO()) --> false
         // isScrumTeam(new Developer()) --> true
 
-
+        joinTeam(new Tester("Rose", "QA", 320_000));
     }
 
     public static Employee maxSalary(List<Employee> allEmployees){
@@ -93,6 +98,10 @@ public class Scrum {
 
     public static boolean inScrumTeam(Employee employee) {
         return employee instanceof Tester; // || employee instanceof Developer
+    }
+
+    public static void joinTeam(Employee employee) {
+        System.out.println(employee.getClass().getSimpleName() + " is joining Scrum team");
     }
 
 }
