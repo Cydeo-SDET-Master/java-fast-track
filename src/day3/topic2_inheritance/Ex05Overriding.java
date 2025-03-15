@@ -21,6 +21,10 @@ class Sport {
     void perform() {
         System.out.println("Performing sport");
     }
+    //Method Overloading
+    public void perform(String action) {
+        System.out.println("Performing " + action);
+    }
 
     @Override
     public String toString() {
@@ -36,7 +40,7 @@ class Golf extends Sport{
 }
 class Soccer extends Sport{
     @Override
-    void perform() {
+    public void perform() {
         System.out.println("Kicking ball");
     }
 }

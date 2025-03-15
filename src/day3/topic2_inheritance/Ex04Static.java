@@ -14,7 +14,7 @@ public class Ex04Static {
 }
 
 class Season {
-    static String planet = "Earth";
+   public static String planet = "Earth";
 }
 class Winter extends Season{
 

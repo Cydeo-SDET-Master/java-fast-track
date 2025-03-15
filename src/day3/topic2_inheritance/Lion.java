@@ -7,6 +7,10 @@ public class Lion extends Animal{ // Lion is a Animal
     int maneSize;
     Home home; // Lion has a Home
 
+    public void roar() {
+        super.eat();
+        System.out.println("And roaring");
+    }
 
 }
 
